@@ -1,0 +1,112 @@
+@import '_variables';
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    font-family: 'old_standard';
+    background-color: $black;
+}
+h1 {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 400;
+    color: $white;
+    margin: 0 auto 35px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+h2 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    color: $gold;
+    margin: 0 auto;
+    text-align: center;
+
+}
+h4{
+    font-family: "old_standard_ttregular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    padding: 20px 41px;
+    color: $grey;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+ }
+
+img {
+    max-width: 100%;
+}
+
+.hero{
+    background-image: url("../../image/hero-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .hero__section{
+        
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // width: 100%;
+        
+        max-width: 1920px;
+        min-height: 862px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;  
+    }
+.hero__section-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+    .hero__text{
+        font-family: "old_standard_ttregular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: $gold;
+    }
+    .hero__title{
+        font-family: "old_standard_ttregular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 80px;
+        // align-items: center;
+        // justify-content: center;
+        text-align: center;
+        color: $white;
+    }
+    .hero__btn{
+        background-color: $gold;
+        font-family: "old_standard_ttregular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 22px;
+        padding: 14px 24px;
+        color: $black;
+
+        &:hover{
+            background-color: goldenrod;
+        }
+    }
+
+}
