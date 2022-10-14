@@ -1,0 +1,128 @@
+.visual-laptop {
+  height: 684px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 0 38px;
+
+  .visual-laptop-black {
+    width: 100%;
+    border: 1px solid #161616;
+    background-color: #161616;
+  }
+}
+
+.services {
+  height: 752px;
+  background-color: $black;
+  padding: 120px;
+
+  .pseudo-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+}
+
+.service-block-sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .service-block {
+    width: 400px;
+    height: 350px;
+    border: 1px solid #54493E;
+
+    &:hover {
+      margin-top: 30px;
+      background-color: #161616;;
+      transition: ease-in-out 0.3s;
+    }
+
+    .service-block-icons {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.service-wrapper {
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+
+  .service-title {
+    font-size: 29px;
+    line-height: 40px;
+    color: $gold;
+    margin-top: 10px;
+  }
+
+  .service-pseudotitle {
+    font-size: 15px;
+    line-height: 26px;
+    color: $grey;
+    margin-top: 5px;
+  }
+
+  .service-description {
+    font-size: 11px;
+    color: $grey;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: left;
+}
+
+.icon-square {
+  position: relative;
+  color: #54493E;
+  font-size: 40px;
+  margin: 61px 0 0 71px;
+}
+
+.icon-triangle {
+  position: absolute;
+  z-index: 1;
+  color: $gold;
+  font-size: 40px;
+  margin: 82px 0 0 68px;
+}
+
+.icon-semi-circle-empty {
+  position: relative;
+  z-index: 1;
+  color: #54493E;
+  font-size: 40px;
+  margin: 64px 0 0 67px;
+}
+
+.icon-semi-circle-full {
+  position: absolute;
+  z-index: 1;
+  color: $gold;
+  font-size: 40px;
+  margin: 72px 0 0 83px;
+}
+
+.icon-circle-empty {
+  position: relative;
+  z-index: 1;
+  color: $gold;
+  font-size: 40px;
+  margin: 64px 0 0 69px;
+}
+
+.icon-pentagon {
+  position: absolute;
+  color: #54493E;
+  font-size: 40px;
+  margin: 87px 0 0 62px;
+}
