@@ -47,19 +47,19 @@ img {
 }
 
 .hero{
-    background-image: url("../../image/hero-bg.png");
+    background-image: url("/img/hero-img.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     .hero__section{
         
-        // background-position: center;
-        // background-repeat: no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
         // background-size: cover;
-        // width: 100%;
+        width: 100%;
         
         max-width: 1920px;
-        min-height: 862px;
+        min-height: 602px;
         display: flex;
         align-items: center;
         justify-content: center;
