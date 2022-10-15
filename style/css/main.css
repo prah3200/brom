@@ -491,6 +491,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  margin: 0 auto;
 }
 .hero .hero__section-holder {
   display: -webkit-box;
@@ -786,6 +787,7 @@ img {
 
 .visual-laptop {
   height: 684px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 0 38px;
