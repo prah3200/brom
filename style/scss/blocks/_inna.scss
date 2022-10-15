@@ -150,6 +150,14 @@ img {
             text-align: center;
             border: 1px solid $light-orange;
 
+            &:hover {
+                background-color: $gold;
+            }
+
+            &:hover .img-download {
+                transform: scale(1.15);
+            }
+
         }
     }
 
