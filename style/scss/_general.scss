@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'old_standard_ttregular';
+  font-family: $font-family;
   padding: 0;
   margin: 0 auto;
 }
@@ -76,4 +76,26 @@ a {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 400;
+  color: $grey;
+  line-height: 28px;
+  text-align: center;
+
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  background-color: $gold;
+  color: $text-btn ;
+  text-decoration: none;
 }
