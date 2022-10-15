@@ -1,6 +1,11 @@
 .footer {
   background-color: $black;
   padding: 125px 0 0 0;
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .container {
     width: 100%;
     margin: 0 auto;
@@ -35,6 +40,7 @@
     .input-holder {
       background-color: $black;
       width: 100%;
+      
 
       input {
         background-color: $black;
@@ -47,6 +53,9 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         color: #ACA592;
+       &:focus-visible {
+        outline: none;
+       }
       }
     }
 
@@ -75,6 +84,8 @@
     text-align: center;
     margin-top: 32px;
     width: 100%;
+    max-width: 411px;
+    margin: 0 auto;
 
     .link-holder {
       color: $gold;
@@ -93,14 +104,27 @@
   }
 
   .col {
-    border: 1px solid $grey;
-    padding: 14px 19px;
+    height: 48px;
+    width: 48px;
+    border: 1px solid $grey;    
     margin: 8px;
 
-    &:hover {
+      &:hover {
       color: $gold;
       background-color: $grey;
     }
+    .twitter {
+      padding: 16px 14px;
+    }
+
+    .instagram, .linkedin {
+      padding: 14px;
+    }
+    .facebook {
+      padding: 14px 19px;
+    }
+
+
   }
   .copyright {
     margin-top: 25px;
