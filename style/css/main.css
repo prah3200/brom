@@ -79,8 +79,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../.././src/fonts/icomoon.eot?vp5w0t");
-  src: url("../.././src/fonts/icomoon.eot?vp5w0t#iefix") format("embedded-opentype"), url("../.././src/fonts/icomoon.ttf?vp5w0t") format("truetype"), url("../.././src/fonts/icomoon.woff?vp5w0t") format("woff"), url("../.././src/fonts/icomoon.svg?vp5w0t#icomoon") format("svg");
+  src: url("../../src/fonts/icomoon.eot?69ik7k");
+  src: url("../../src/fonts/icomoon.eot?69ik7k#iefix") format("embedded-opentype"), url("../../src/fonts/icomoon.ttf?69ik7k") format("truetype"), url("../../src/fonts/icomoon.woff?69ik7k") format("woff"), url("../../src/fonts/icomoon.svg?69ik7k#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -88,7 +88,7 @@
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  /*speak: never;*/
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -99,8 +99,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-instagram:before {
+.icon-cube:before {
   content: "\e900";
+}
+
+.icon-fuul-circle:before {
+  content: "\e901";
+}
+
+.icon-half-circle-emty:before {
+  content: "\e902";
+}
+
+.icon-half-circle-yellow:before {
+  content: "\e903";
+}
+
+.icon-instagram:before {
+  content: "\e904";
+}
+
+.icon-penta:before {
+  content: "\e905";
+}
+
+.icon-triangle:before {
+  content: "\e906";
 }
 
 *,
@@ -878,7 +902,7 @@ img {
           justify-content: left;
 }
 
-.icon-square {
+.icon-cube {
   position: relative;
   color: #54493E;
   font-size: 40px;
@@ -893,7 +917,7 @@ img {
   margin: 82px 0 0 68px;
 }
 
-.icon-semi-circle-empty {
+.icon-half-circle-emty {
   position: relative;
   z-index: 1;
   color: #54493E;
@@ -901,7 +925,7 @@ img {
   margin: 64px 0 0 67px;
 }
 
-.icon-semi-circle-full {
+.icon-half-circle-yellow {
   position: absolute;
   z-index: 1;
   color: #FFAE2B;
@@ -909,7 +933,7 @@ img {
   margin: 72px 0 0 83px;
 }
 
-.icon-circle-empty {
+.icon-fuul-circle {
   position: relative;
   z-index: 1;
   color: #FFAE2B;
@@ -917,7 +941,7 @@ img {
   margin: 64px 0 0 69px;
 }
 
-.icon-pentagon {
+.icon-penta {
   position: absolute;
   color: #54493E;
   font-size: 40px;

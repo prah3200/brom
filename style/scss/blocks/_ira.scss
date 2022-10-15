@@ -82,7 +82,7 @@
   justify-content: left;
 }
 
-.icon-square {
+.icon-cube {
   position: relative;
   color: #54493E;
   font-size: 40px;
@@ -97,7 +97,7 @@
   margin: 82px 0 0 68px;
 }
 
-.icon-semi-circle-empty {
+.icon-half-circle-emty {
   position: relative;
   z-index: 1;
   color: #54493E;
@@ -105,7 +105,7 @@
   margin: 64px 0 0 67px;
 }
 
-.icon-semi-circle-full {
+.icon-half-circle-yellow {
   position: absolute;
   z-index: 1;
   color: $gold;
@@ -113,7 +113,7 @@
   margin: 72px 0 0 83px;
 }
 
-.icon-circle-empty {
+.icon-fuul-circle {
   position: relative;
   z-index: 1;
   color: $gold;
@@ -121,7 +121,7 @@
   margin: 64px 0 0 69px;
 }
 
-.icon-pentagon {
+.icon-penta {
   position: absolute;
   color: #54493E;
   font-size: 40px;
