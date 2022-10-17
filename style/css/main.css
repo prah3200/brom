@@ -638,8 +638,8 @@ h2 {
   transition: all ease-in-out 0.5s;
 }
 .template_section .grid_container .col:hover .img-download {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
   -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
 }
