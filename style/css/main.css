@@ -788,54 +788,56 @@ h2 {
   background-color: #181511;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
+}
+.follow:before {
+  content: "";
+  background-color: #4B4136;
+  height: 1px;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+}
+.follow:after {
+  content: "";
+  background-color: #4B4136;
+  height: 1px;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
 }
 .follow .container {
   width: 100%;
   max-width: 1500px;
-  padding: 21px 120px;
+  padding: 0 120px;
 }
-.follow .container:before, .follow .container:after {
-  content: "";
-  background-color: #4B4136;
-  height: 1px;
-  width: 1200px;
-  display: inline-block;
-  margin-left: 28px;
-}
-.follow .container .photos {
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 10px;
-}
-.follow .container .photos .img-holder {
+.follow .container .img-holder {
   margin: 1px;
   position: relative;
   color: #FFFFFF;
 }
-.follow .container .photos .img-holder .icon-instagram:before {
+.follow .container .img-holder .icon-instagram:before {
   position: absolute;
   font-size: 50px;
   top: -33px;
   right: 73px;
 }
-.follow .container .photos .icon-holder {
+.follow .container .icon-holder {
   padding: 20px 65px;
   position: relative;
 }
-.follow .container .photos .icon-holder .icon-instagram:before {
+.follow .container .icon-holder .icon-instagram:before {
   font-size: 200px;
   width: 100%;
   color: rgba(255, 255, 255, 0.19);
 }
-.follow .container .photos .icon-holder .text-holder {
+.follow .container .icon-holder .text-holder {
   padding: 0 50px;
   margin: 0 0 40px;
   display: inline-block;
@@ -844,13 +846,13 @@ h2 {
   left: 0;
   top: 0;
 }
-.follow .container .photos .icon-holder .text-holder span {
+.follow .container .icon-holder .text-holder span {
   font-weight: 400;
   font-size: 37px;
   line-height: 50px;
   color: #FFAE2B;
 }
-.follow .container .photos .icon-holder .btn {
+.follow .container .icon-holder .btn {
   font-size: 11px;
   line-height: 22px;
   text-transform: uppercase;
@@ -863,7 +865,7 @@ h2 {
   transition: all ease-in-out 0.5s;
   border: none;
 }
-.follow .container .photos .icon-holder .btn:hover {
+.follow .container .icon-holder .btn:hover {
   background-color: #FFAE2B;
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
