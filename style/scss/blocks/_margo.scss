@@ -8,9 +8,6 @@
         max-width: 1500px;
         padding: 21px 120px;
 
-        
-       
-        
         &:before,
         &:after {
             content: '';
@@ -20,7 +17,6 @@
             display: inline-block;
             margin-left: 28px;
         }
-                
 
             .photos {
                 padding: 0;
@@ -33,10 +29,6 @@
                 margin: 1px;
                 position: relative;
                 color: $white;
-
-                img {
-                    width: 100%;
-                }
 
                 .icon-instagram:before {
                     position: absolute;
@@ -65,7 +57,7 @@
                     left: 0;
                     top: 0;
 
-                    p {
+                    span {
                         font-weight: 400;
                         font-size: 37px;
                         line-height: 50px;
@@ -82,12 +74,12 @@
                     bottom: 0;
                     left: 70px;
                     margin: 0 40px 60px;
-                    transition: background-color ease-in-out 0.3s ;
+                    transition: all ease-in-out 0.5s ;
                     border: none;
                     
-
                     &:hover {
-                        background-color: $hover;
+                        background-color: $gold;
+                        transform: scale(1.15)
                     }
                 }
 
