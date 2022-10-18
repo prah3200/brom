@@ -16,6 +16,18 @@
         .btn{
             margin-top: 35px;
         }
+        .hero__title{
+            @include media("<=768px") {
+                font-size: 30px;
+                
+            }
+
+            @include media("<=390px") {
+                font-size: 18px;
+                width: 80%;
+                line-height: 200%;
+            }
+        }
     
     .hero__section-holder{
         display: flex;

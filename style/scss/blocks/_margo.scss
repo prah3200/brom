@@ -2,53 +2,119 @@
     background-color: $black;
     padding: 0 15px;
     margin: 0 auto;
+    margin-top: 10px;
     position: relative;
 
+    @include media('>=1024px'){
+        margin-top: 0;
+    }
+
+    &:before {
+        content: '';
+        background-color: $border;
+        height: 1px;
+        max-width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 10px;
+
+        @include media('>=768px') { 
+            top: 0px;
+        }
+
+        @include media('>=1024px') {
+            top: -10px;
+        }
+    }
+
+    &:after {
+        content: '';
+        background-color: $border;
+        height: 1px;
+        max-width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+
+        @include media('>=768px') { 
+            bottom: 0;
+        }
+
+        @include media('>=1024px') {
+            bottom: -10px;
+        }
+    }
+    
     .container {
         width: 100%;
-        max-width: 1500px;
         padding: 0 120px;
-
-        &:before,
-        &:after {
-            content: '';
-            background-color: $border;
-            height: 1px;
-            width: 1200px;
-            display: inline-block;
-            margin-left: 28px;
-        }
         
-           
-        .photos {
+            .photos {
             padding: 10px 0;
+            margin: 21px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 21px;
-
-
+            
             .img-holder {
-                margin: 1px;
+                margin: 45px;
                 position: relative;
                 color: $white;
+                
+                @include media('>=1024px') {
+                    margin: 1px;
+                    
+                }
+
+                img {
+                    @include media('>=1024px') {
+                        width: 100%;
+                    }
+                }
 
                 .icon-instagram:before {
                     position: absolute;
-                    font-size: 50px;
-                    top: -33px;
-                    right: 73px;
+                    font-size: 30px;
+                    top: -13px;
+                    right: 50px;
+
+                    @include media('>=768px') {
+                        font-size: 40px;
+                        top: -23px;
+                        right: 73px;
+                    }
+
+                    @include media('>=1024px') {
+                        font-size: 50px;
+                        top: -33px;
+                        display: block;
+                    }
                 }
             }
 
             .icon-holder {
-                padding: 20px 65px;
+                padding: 0 80px;
                 position: relative;
 
+                @include media('>=1024px') {
+                    padding: 20px 65px;
+                }
+
                 .icon-instagram:before {
-                    font-size: 200px;
+                    font-size: 100px;
                     width: 100%;
                     color: rgba(255, 255, 255, 0.19);
+
+                    @include media('>=768px') { 
+                        font-size: 150px; 
+                    }
+
+                    @include media('>=1024px') {
+                        font-size: 200px;
+                        display: block;
+                    }
                 }
 
                 .text-holder {
@@ -57,14 +123,34 @@
                     display: inline-block;
                     position: absolute;
                     width: 100%;
-                    left: 0;
-                    top: 0;
+                    left: 27px;
+                    top: 8px;
+
+                    @include media('>=768px') {
+                        left: 20px;
+                        top: 10px;
+                    }
+
+                    @include media('>=1024px') {
+                        left: 0;
+                        top: 0;
+                    }
 
                     span {
                         font-weight: 400;
-                        font-size: 37px;
-                        line-height: 50px;
+                        font-size: 17px;
+                        line-height: 30px;
                         color: $gold;
+
+                        @include media('>=768px') {
+                            font-size: 27px;
+                            line-height: 40px;
+                        }
+
+                        @include media('>=1024px') {
+                            font-size: 37px;
+                            line-height: 50px;
+                        }
                     }
                 }
 
@@ -74,11 +160,22 @@
                     text-transform: uppercase;
                     padding: 14px 24px;
                     position: absolute;
-                    bottom: 0;
-                    left: 70px;
-                    margin: 0 40px 60px;
+                    bottom: -70px;
+                    left: 20px;
+                    margin: 0 53px 60px;
                     transition: all ease-in-out 0.5s ;
                     border: none;
+
+                    @include media('>=768px') {
+                        left: 45px;
+                    }
+
+                    @include media('>=1024px') {
+                        bottom: 0;
+                        left: 70px;
+                        margin: 0 40px 60px;
+                        display: inline-block;
+                    }
                     
                     &:hover {
                         background-color: $gold;
@@ -88,4 +185,4 @@
             }
         }
     }
-    }
+}

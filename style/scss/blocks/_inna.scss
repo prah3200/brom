@@ -2,35 +2,36 @@ h2 {
     padding-top: 10px;
 }
 
-.pseudo_title {
-    margin: 0 auto;
-    color: $grey;
-    letter-spacing: 2px;
-    text-transform: uppercase;            
-}
-
 .template_section {
+    padding-bottom: 120px;
 
-    .template_container {
-        text-align: center;
-        max-width: 1200px;
-        width: 100%;
+    .template_container {           
         margin: 0 auto;
         padding-bottom: 60px; 
         padding-top: 120px; 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        .psevdo_title {
-            color: #ACA592; 
+        .pseudo_title {
+            margin: 0 auto;
+            color: $grey;
+            letter-spacing: 2px;
+            text-transform: uppercase;            
         }
-    
+       
     }
 
     .grid_container {
         padding: 0 120px 120px; 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 20px;   
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px 0;
+        width: 100%; 
 
         .col {
             padding: 41px;
@@ -51,9 +52,3 @@ h2 {
     }
 
 }
-
-   
-
-
-
-
